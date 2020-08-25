@@ -26,8 +26,13 @@ public class Cart implements ICart {
     @Override
     public double calculateTotalPrice() {
         double totalPrice = 0;
-        for(Product product: products)
-            totalPrice += product.getPrice();
+        for(Product product: products) {
+            totalPrice += product.getPrice() * product.getQuantity();
+        }
+
+//        for (int i = 0; i <products.size(); i++){
+//            totalPrice += products.get(i).getPrice();
+//        }
         return totalPrice;
     }
 }

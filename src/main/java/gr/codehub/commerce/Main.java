@@ -5,12 +5,12 @@ import gr.codehub.commerce.model.Product;
 
 import gr.codehub.commerce.model.Supplier;
 import gr.codehub.commerce.service.Cart;
+import gr.codehub.commerce.service.Ui;
 
 public class Main {
     public static void main(String[] args) {
-       Cart cart = new Cart();
-        Product c = new Product("patata", 1.30,2,
-                Category.SNACKS,
-                new Supplier());
+       Ui ui = new Ui();
+       ui.manageCart();
+
     }
 }
