@@ -10,10 +10,10 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Cart implements ICart {
+public class CartService implements ICartService {
     private ArrayList<Product> products;
 
-    public Cart() {
+    public CartService() {
         products = new ArrayList<>();
     }
 
@@ -51,6 +51,7 @@ public class Cart implements ICart {
                     product.getPrice() + ","+
                     product.getQuantity() + ","+
                     product.getCategory());
+
         }
         pw.close();
     }
