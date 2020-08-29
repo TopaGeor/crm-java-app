@@ -4,7 +4,7 @@ import gr.codehub.commerce.model.Product;
 
 import java.io.FileNotFoundException;
 
-public interface ICart {
+public interface ICartService {
 
     void addProduct(Product product);
     void removeProduct(int productId);

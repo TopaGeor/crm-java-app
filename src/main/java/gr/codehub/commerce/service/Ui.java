@@ -4,15 +4,13 @@ import gr.codehub.commerce.model.Category;
 import gr.codehub.commerce.model.Product;
 import gr.codehub.commerce.model.Supplier;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Ui {
 
     public void manageCart(){
-        ICart cart = new Cart();
+        ICartService cart = new CartService();
 
 //        do {
 //            Product product = getProduct();
